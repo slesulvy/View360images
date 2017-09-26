@@ -1,0 +1,66 @@
+
+#panorama {
+	width: 1000px;
+	height: 600px;
+}
+#controls {
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 3px;
+	
+}
+.ctrl {
+	padding: 8px 5px;
+	width: 50px;
+	text-align: center;
+	background: rgba(200, 200, 200, 0.8);
+	display: inline-block;
+	cursor: pointer;
+	opacity: 0.7;
+}
+.ctrl:hover {
+	background: rgba(200, 200, 200, 1);
+}
+.custom-hotspot {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: url(img/camera.png) no-repeat top center;
+	background-size: 100%;
+
+}
+div.custom-tooltip span {
+	visibility: hidden;
+	position: absolute;
+	border-radius: 3px;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	max-width: 200px;
+	padding: 5px 10px;
+	margin-left: -220px;
+	cursor: default;
+}
+div.custom-tooltip:hover span{
+	visibility: visible;
+}
+div.custom-tooltip:hover span:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #fff transparent transparent transparent;
+	bottom: -20px;
+	left: -10px;
+	margin: 0 50%;
+}
+
+#VT_list  a{
+	text-decoration: none;
+	color: white;
+}
